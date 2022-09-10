@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*printf - prints the result of a test if 
+*printf - prints the result of a test if
 *
 *Return: always 0 (Success)
 */
@@ -18,7 +18,7 @@ int main(void)
 	
 	if (n < 0)
 	{
-		printf("%d is negative\n", n);	
+		printf("%d is negative\n", n);
 	}
 	else if (n > 0)
 	{
