@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- *main - Entry point
+ * main - Entry point
  *
- *print - prints to the screen
+ * _putchar - prints to the screeb
  *
- *Return - always 0 (Success)
+ *
+ *  Return: Always 0
  */
 int main(void)
 {
