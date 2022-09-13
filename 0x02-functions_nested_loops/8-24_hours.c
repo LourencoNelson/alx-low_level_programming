@@ -1,3 +1,11 @@
+#include "main.h"
+
+/**
+ * jack_bauer - prints every minute of a day
+ *
+ * _putchar - prints to the screen
+ *
+ */
 void jack_bauer(void)
 {
 	int i;
@@ -17,7 +25,11 @@ void jack_bauer(void)
 					{
 						break;
 					}
-					printf("%d%d:%d%d\n", i, j, k, l);
+					_putchar(i + '0');
+					_putchar(j + '0');
+					_putchar(':');
+					_putchar(k + '0');
+					_putchar(l + '0');
 				}
 			}
 		}
