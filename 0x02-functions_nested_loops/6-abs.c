@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- *
  * _abs - returns the absolute value
+ * @n: number to be converted
  *
- * n - is an int number
- *
- * Return: n positive 
+ * Return: the absolute number of n
  *
  */
 int _abs(int n)
@@ -15,7 +13,7 @@ int _abs(int n)
 
 	if (n < 0)
 	{
-		ret = (n*(-1));
+		ret = n * (-1);
 	}
 	else
 	{

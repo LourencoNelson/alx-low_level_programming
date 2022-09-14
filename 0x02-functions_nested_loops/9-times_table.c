@@ -1,17 +1,33 @@
+#include "main.h"
+
+/**
+ * times_table - prints the times table of 9
+ */
 void times_table(void)
 {
 	int i;
 	int j;
+	int num;
+	int digit;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			printf(i*j);
-			if(j != 9)
+			num = i * j;
+
+			while (num > 0)
 			{
-				printf(", ");
+				digit = num % 10;
+				num = num / 10;
+				_putchar(digit + 0);
+			}
+			if (j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }

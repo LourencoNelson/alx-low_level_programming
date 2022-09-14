@@ -2,10 +2,8 @@
 
 /**
  * add - adds two numbers
- *
- * a: int number
- *
- * b: int number 
+ * @a: first operand
+ * @b: second operand
  *
  * Return: sum of a and b
  */

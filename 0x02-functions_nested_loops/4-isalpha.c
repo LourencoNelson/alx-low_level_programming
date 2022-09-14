@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alpha inputs
+ * _isalpha - checks if an input is an alpha
+ * @c: character to be checked
  *
- * c - is a number
- *
- * Return - 1 (Success)
+ * Return: 1 (Success)
  */
-
 int _isalpha(int c)
 {
 	int ret;
@@ -16,6 +14,5 @@ int _isalpha(int c)
 		ret = 1;
 	else
 		ret = 0;
-	
 	return (ret);
 }
