@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *
@@ -15,7 +15,7 @@ int _abs(int n)
 
 	if (n < 0)
 	{
-		ret = n * (-1);
+		ret = (n*(-1));
 	}
 	else
 	{

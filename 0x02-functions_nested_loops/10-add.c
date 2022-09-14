@@ -3,14 +3,13 @@
 /**
  * add - adds two numbers
  *
- * a - int number
+ * a: int number
  *
- * b - int number 
+ * b: int number 
  *
  * Return: sum of a and b
  */
-
 int add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }
