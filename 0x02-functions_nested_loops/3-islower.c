@@ -3,6 +3,9 @@
 /**
  * _islower - checks for lowercase letter
  *
+ *  c - is a int number
+ *
+ *  Return: 1 if is lower
  */
 int _islower(int c)
 {
@@ -12,6 +15,6 @@ int _islower(int c)
 		ret = 1;
 	else
 		ret = 0;
-	
-	return ret;
+
+	return (ret);
 }

@@ -2,7 +2,10 @@
 
 /**
  * _isalpha - checks for alpha inputs
- * 
+ *
+ * c - is a number
+ *
+ * Return - 1 (Success)
  */
 
 int _isalpha(int c)
@@ -14,5 +17,5 @@ int _isalpha(int c)
 	else
 		ret = 0;
 	
-	return ret;
+	return (ret);
 }

@@ -4,6 +4,10 @@ include "main.h"
  *
  * _abs - returns the absolute value
  *
+ * n - is an int number
+ *
+ * Return: n positive 
+ *
  */
 int _abs(int n)
 {
@@ -17,5 +21,5 @@ int _abs(int n)
 	{
 		ret = n;
 	}
-	return ret;
+	return (ret);
 }
