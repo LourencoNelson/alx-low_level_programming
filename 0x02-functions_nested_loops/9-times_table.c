@@ -31,8 +31,17 @@ void times_table(void)
 			}
 			if (j != 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				if (num < 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
