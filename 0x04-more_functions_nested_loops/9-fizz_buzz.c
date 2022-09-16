@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * _putchar - prints the line to the screen
+ * printf - prints the numbers and words to the screen
  *
  * Return: 0 always (Success)
  */
