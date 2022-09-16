@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Entry point
  *
  * _putchar - prints the line to the screen
  *
- * Return: 0 alsways (Success)
+ * Return: 0 always (Success)
  */
 int main(void)
 {
