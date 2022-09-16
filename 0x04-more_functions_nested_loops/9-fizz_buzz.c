@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
  * main - Entry point
@@ -10,7 +11,6 @@
 int main(void)
 {
 	int i;
-	int j;
 
 	for (i = 1; i <= 100; i++)
 	{
