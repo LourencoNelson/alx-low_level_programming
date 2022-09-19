@@ -16,6 +16,7 @@ void _puts(char *str)
 		if (*(str + c) != '\0')
 		{
 			putchar(*(str + c));
+			c++;
 		}
 		else
 		{
