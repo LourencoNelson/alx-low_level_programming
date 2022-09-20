@@ -4,6 +4,8 @@
  * print_rev - prints in reverse
  * @s: string
  *
+ * putchar - prints to the screen
+ *
  */
 void print_rev(char *s)
 {
@@ -20,12 +22,10 @@ void print_rev(char *s)
 		{
 			break;
 		}
-	
-	}
-	while (*(s + c) != ch)
-	{
-		putchar(*(s + c));
-		c--;
 	}
 
+	do {
+		putchar(*(s + c));
+		c--;
+	} while (*(s + c) != ch);
 }
