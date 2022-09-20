@@ -23,7 +23,7 @@ void print_rev(char *s)
 		}
 	
 	}
-	while (*(s + c) != fp)
+	while (*(s + c) != ch)
 	{
 		putchar(*(s + c));
 		c--;
