@@ -25,9 +25,8 @@ void print_rev(char *s)
 	}
 
 	do {
-		putchar(*(s + c));
 		c--;
+		putchar(*(s + c));
 	} while (*(s + c) != ch);
-	putchar(*(s + c));
 	putchar('\n');
 }
