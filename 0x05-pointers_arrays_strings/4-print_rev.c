@@ -12,21 +12,24 @@ void print_rev(char *s)
 	int c = 0;
 	char ch = *(s + c);
 
-	while (1)
+	if (*(s + c) != '\0')
 	{
-		if (*(s + c) != '\0')
+		while (1)
 		{
-			c++;
+			if (*(s + c) != '\0')
+			{
+				c++;
+			}
+			else
+			{
+				break;
+			}
 		}
-		else
-		{
-			break;
-		}
-	}
 
-	do {
-		c--;
-		putchar(*(s + c));
-	} while (*(s + c) != ch);
+		do {
+			c--;
+			putchar(*(s + c));
+		} while (*(s + c) != ch);
+	}
 	putchar('\n');
 }
