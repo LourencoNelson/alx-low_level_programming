@@ -7,7 +7,8 @@
  */
 void puts_half(char *s)
 {
-	int  c = 0;
+	int c = 0;
+	int i = 0;
 
 	while (1)
 	{
@@ -26,6 +27,7 @@ void puts_half(char *s)
 		if ((*(s + i) != '\n') && (c / 2) == i)
 		{
 			putchar(*(s + i));
+			i++;
 		}
 		else
 		{
