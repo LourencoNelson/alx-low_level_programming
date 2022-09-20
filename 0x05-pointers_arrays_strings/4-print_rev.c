@@ -8,14 +8,12 @@
 void print_rev(char *s)
 {
 	int c = 0;
-	char *fp = &s;
-	char *lp;
+	char *fp = s;
 
 	while (1)
 	{
 		if (*(s + c) != '\0')
 		{
-			lp = &(s + c);
 			c++;
 		}
 		else
