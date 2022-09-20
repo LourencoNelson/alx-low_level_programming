@@ -24,9 +24,12 @@ void puts_half(char *s)
 
 	while (1)
 	{
-		if ((*(s + i) != '\n') && (c / 2) == i)
+		if (*(s + i) != '\n')
 		{
-			putchar(*(s + i));
+			if ((c / 2) >= i)
+			{
+				putchar(*(s + i));
+			}
 			i++;
 		}
 		else
