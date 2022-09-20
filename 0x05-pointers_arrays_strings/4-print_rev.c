@@ -9,6 +9,7 @@ void print_rev(char *s)
 {
 	int c = 0;
 	char *fp = s;
+	char ch = *s;
 
 	while (1)
 	{
@@ -22,7 +23,7 @@ void print_rev(char *s)
 		}
 	
 	}
-	while (&(s + c) >= fp)
+	while (*(s + c) != fp)
 	{
 		putchar(*(s + c));
 		c--;
