@@ -34,4 +34,5 @@ void puts_half(char *s)
 			break;
 		}
 	}
+	putchar('\n');
 }
