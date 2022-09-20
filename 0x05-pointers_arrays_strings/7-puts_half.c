@@ -24,7 +24,7 @@ void puts_half(char *s)
 	i = c / 2;
 	while (1)
 	{
-		if (*(s + i) != '\n')
+		if (*(s + i) != '\0')
 		{
 			putchar(*(s + i));
 			i++;
