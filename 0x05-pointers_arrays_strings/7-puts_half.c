@@ -25,7 +25,7 @@ void puts_half(char *s)
 	{
 		if (*(s + i) != '\0')
 		{
-			if (i > (c / 2))
+			if (i >= (c / 2) || i > (c / 2))
 				putchar(*(s + i));
 			i++;
 		}
