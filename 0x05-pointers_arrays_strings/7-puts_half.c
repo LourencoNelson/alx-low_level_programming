@@ -21,15 +21,12 @@ void puts_half(char *s)
 			break;
 		}
 	}
-
+	i = c / 2;
 	while (1)
 	{
 		if (*(s + i) != '\n')
 		{
-			if (i > (c / 2))
-			{
-				putchar(*(s + i));
-			}
+			putchar(*(s + i));
 			i++;
 		}
 		else
