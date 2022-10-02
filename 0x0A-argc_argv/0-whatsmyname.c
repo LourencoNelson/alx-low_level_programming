@@ -8,7 +8,6 @@
  * print f - prints its content to the stdo
  *
  * Return: always 0 (Succes)
- *
  */
 int main(int argc, char *argv[])
 {
