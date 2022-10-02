@@ -5,13 +5,12 @@
  * @argc: Number of elements of argv[]
  * @argv: arguments of the command line
  *
- * _putchar - prints its content to the stdo
+ * printf - prints its content to the stdo
  *
  * Return: always 0 (Succes)
  */
 int main(int argc, char *argv[])
 {
-	_putchar(arhc + '0');
-	_putchar('\n');
+	printf("%d\n", argc);
 	return (0);
 }
