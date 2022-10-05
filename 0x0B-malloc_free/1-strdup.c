@@ -24,13 +24,12 @@ char *_strdup(char *str)
 			i++;
 		}
 
-		s = (char *)malloc(sizeof(char) * (i++));
+		s = (char *)malloc(sizeof(char) * (i + 1));
 
 		for (j = 0; j < i; j++)
 		{
 			s[j] = str[j];
 		}
-		s[j] = '\0';
 	}
 	return (s);
 }
