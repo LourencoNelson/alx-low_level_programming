@@ -29,26 +29,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (n >= ln2)
 		{
 			if (i < ln1)
-			{
 				s[i] = s1[i];
-			}
 			else
-			{
 				s[i] = s2[j];
-				j++;
-			}
+			j++;
 		}
 		else
 		{
 			if (i < ln1)
-			{
 				s[i] = s1[i];
-			}
 			else
-			{
 				s[i] = s2[j];
-				j++;
-			}
+			j++;
 			if (j > n)
 				break;
 		}
