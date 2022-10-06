@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strdup - string copy
+ * str_concat - string copy
  * @s1: firrst string
  * @s2: second  string
  *
  * Return: a pointer to the new string
  */
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int k;
 	int i;
