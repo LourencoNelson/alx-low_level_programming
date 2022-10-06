@@ -1,0 +1,2 @@
+#!/bin/bash
+git add ../0x09-static_libraries; git commit -m "static library tasks"; git push;
