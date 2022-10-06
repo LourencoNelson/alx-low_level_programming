@@ -10,11 +10,14 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
-	int len1 = strlen(s1);
-	int len2 = strlen(s2);
-	int totlen = len1 + len2;
+	int i, len1, ln2, totlen;
 	char *s;
+
+	for (ln1 = 0; s1[ln1] == '\0'; ln1++)
+		;
+	for (ln2 = 0; s2[ln2] == '\0'; ln2++)
+		;
+	totlen = ln1 + ln2;
 
 	if (n >= len2)
 	{
@@ -42,6 +45,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		s[i] = '\0';
 	}
-
 	return (s);
 }
