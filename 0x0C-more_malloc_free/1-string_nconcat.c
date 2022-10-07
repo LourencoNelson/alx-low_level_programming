@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (i = 0, j = 0; i < totlen; i++)
 	{
-		if (n >= ln2)
+		if ((int) n >= ln2)
 		{
 			if (i < ln1)
 				s[i] = s1[i];
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			else
 				s[i] = s2[j];
 			j++;
-			if (j > n)
+			if ((int) j > n)
 				break;
 		}
 	}
