@@ -1,0 +1,2 @@
+#!/bin/bash
+git add ../0x0F-function_pointers; git commit -m "function pointers tasks"; git push;
