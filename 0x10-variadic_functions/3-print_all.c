@@ -5,16 +5,12 @@
  */
 void print_all(const char * const format, ...)
 {
-	int size, j, i, c, flag;
+	int size strlen(format), j = 0, i, c, flag = 0;
 	double f;
 	char *s;
 	va_list ap;
 
-	flag = 0;
-	size = strlen(format);
 	va_start(ap, format);
-	j = 0;
-
 	while (j < size)
 	{
 		switch (format[j])
@@ -40,12 +36,9 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				flag = -1;
-				break;
 		}
-		if (j != (int) size - 1 && flag == 0)
-		{
+		if (j != (int) size -1 && flag == 0)
 			printf(", ");
-		}
 		if (flag == -1)
 			flag = 0;
 		j++;
