@@ -5,7 +5,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int size strlen(format), j = 0, i, c, flag = 0;
+	int size = strlen(format), j = 0, i, c, flag = 0;
 	double f;
 	char *s;
 	va_list ap;
