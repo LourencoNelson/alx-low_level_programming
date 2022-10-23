@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * pow_recursion - returns the power of a given number to an given expoent
+ * _pow_recursion - returns the power of a given number to an given expoent
  * @x: number
  * @y: expoent
  *
  * Return: number power (on success)
  */
 
-int pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 	{
@@ -20,6 +20,6 @@ int pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * pow_recursion(x, y - 1));
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
