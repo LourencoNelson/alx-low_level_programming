@@ -1,0 +1,2 @@
+#!/bin/bash
+git add ../0x07-pointers_arrays_strings; git commit -m "more pointers, array and string tasks"; git push;
