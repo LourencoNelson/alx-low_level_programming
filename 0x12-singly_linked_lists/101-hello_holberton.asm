@@ -1,17 +1,16 @@
-section .data
+.global _start
 
-	mesg db "Hello world!",10
+.text
 
-section .text
-
-global _start
 _start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 14
+	mov $1, %rax
+	mov $1, %rdi
+	mov $msg, %rsi
+	mov $13, %rdx
 	syscall
 
-	mov rax, 60
-	mov rdi, 0
+	mov %60, %rax
+	mov %rdi, %rdi
 	syscall
+msg:
+	.ascii "Hello, World\n"
