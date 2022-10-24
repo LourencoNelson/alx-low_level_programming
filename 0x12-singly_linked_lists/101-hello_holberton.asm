@@ -15,8 +15,3 @@ _start:
 	mov rax, 60
 	mov rdi, 0
 	syscall
-
-section .rodata
-	
-	msg: db "Hello, world!", 10
-	msglen: equ $ - msg
