@@ -11,7 +11,9 @@ int print_last_digit(int n)
 	int l;
 	long int num;
 
-	if (n < 0)
+	if (n == INT_MIN)
+		num = INT_MAX;
+	else if (n < 0)
 		num = n * (-1);
 	else
 		num = n;
