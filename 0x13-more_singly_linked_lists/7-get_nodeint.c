@@ -17,14 +17,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	while (tmp != NULL)
 	{
-		printf("%d\n", tmp->n);
+		if (count == index)
+		{
+			return (tmp);
+		}
 		tmp = tmp->next;
 		count++;
-
-		if (count == (index - 1))
-			break;
 	}
-
-	return (tmp);
-
 }
