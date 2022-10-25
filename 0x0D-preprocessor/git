@@ -1,0 +1,2 @@
+#!/bin/bash
+git add ../0x0D-preprocessor; git commit -m "preprocessor tasks"; git push;
