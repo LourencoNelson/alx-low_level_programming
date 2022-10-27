@@ -21,7 +21,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	else
 	{
 		for (i = 0; i < nmemb; i++)
+		{
+			pointer = (char *) pointer + 1;
 			pointer = 0;
+		}
 
 		return (pointer);
 	}
