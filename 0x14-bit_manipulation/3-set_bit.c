@@ -11,5 +11,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int num = *n;
 
-	return ((int)(1 << index) | num);
+	return ((int)(1 << index) ^ num);
 }
