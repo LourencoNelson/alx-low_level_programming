@@ -4,9 +4,9 @@
  * _atoi - convert string to an int
  * @s: string
  *
- * Return: void
+ * Return: int
  */
-char *_atoi(char *s)
+int _atoi(char *s)
 {
 	int sign;
 	unsigned int num;
