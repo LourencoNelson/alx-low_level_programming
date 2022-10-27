@@ -10,7 +10,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d, n, o;
+	dog_t *d, *n, *o;
 
 	strcpy(n, name);
 	strcpy(o, owner);
