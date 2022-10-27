@@ -28,7 +28,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	else if (index == 0)
 	{
 		temp = *head;
-		head = head->next;
+		*head = (*head)->next;
 		temp->next = NULL;
 		free(temp);
 		return (1);
