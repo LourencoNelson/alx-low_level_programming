@@ -12,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	void *pointer;
 
-	pointer = malloc(nmemb * size);
+	pointer = (void *) malloc(nmemb * size);
 
 	if (pointer == NULL || nmemb == 0 || size == 0)
 	{
