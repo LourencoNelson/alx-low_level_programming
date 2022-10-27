@@ -10,18 +10,16 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d, *n, *o;
+	dog_t *d;
 
-	strcpy(n, name);
-	strcpy(o, owner);
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
 
-	d->name = n;
+	d->name = name;
 	(*d).age = age;
-	d->owner = o;
+	d->owner = owner;
 
 	return (d);
 }
