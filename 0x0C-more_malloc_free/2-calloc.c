@@ -9,9 +9,9 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
+	unsigned int i;
 	void *pointer;
-
+i
 	pointer = malloc(nmemb * size);
 
 	if (pointer == NULL || nmemb == 0 || size == 0)
