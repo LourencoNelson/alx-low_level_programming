@@ -2,37 +2,24 @@
 
 /**
  * puts_half - returns the length of a string
- * @s: string
+ * @str: string
  *
  */
-void puts_half(char *s)
+void puts_half(char *str)
 {
-	int c = 0;
-	int i = 0;
+	int idx, half;
 
-	while (1)
+	idx = 0;
+
+	while (s[idx] != '\0')
+		idx;
+
+	half = idx / 2;
+
+	if (idx % 2 == 1)
 	{
-		if (*(s + c) != '\0')
-		{
-			c++;
-		}
-		else
-		{
-			break;
-		}
-	}
-	i = c / 2;
-	while (1)
-	{
-		if (*(s + i) != '\0')
-		{
-			putchar(*(s + i));
-			i++;
-		}
-		else
-		{
-			break;
-		}
+		_putchar(str[half]);
+		half++;
 	}
 	putchar('\n');
 }
