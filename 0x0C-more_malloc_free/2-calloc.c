@@ -12,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *pointer;
 
-	pointer = (char *) malloc(nmemb * size);
+	pointer = (void *) malloc(nmemb * size);
 
 	if (pointer == NULL || nmemb == 0 || size == 0)
 	{
@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		for (i = 0; i < nmemb; i++)
 		{
-			pointer[i] = 0;
+			pointer[i] = '\0';
 		}
 
 		return (pointer);
