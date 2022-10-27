@@ -1,39 +1,23 @@
 #include "main.h"
 
 /**
- * print_rev - prints in reverse
- * @s: string
- *
- * putchar - prints to the screen
+ * print_array - prints an array
+ * @a: string
+ * @n: number of elements
  *
  */
-void print_rev(char *a, int n)
+void print_array(char *a, int n)
 {
-	int c = 0;
-	int i = 0;
-	char ch = *(s + c);
+	int i;
 
-	if (*(s + c) != '\0')
+	for (i = 0; i < n; i++)
 	{
-		while (1)
+		printf("%d", a[i]);
+		if (i != n - 1)
 		{
-			if (*(s + c) != '\0')
-			{
-				c++;
-			}
-			else
-			{
-				break;
-			}
-		}
-		while (1)
-		{
-			if (i != n - 1)
-			{
-				putchar(*(s + i));
-
-				
+			printf(",");
+			printf(" ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
