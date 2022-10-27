@@ -9,5 +9,5 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	return (*n = *n &~(1 << index));
+	return (*n = *n & ~(1 << index));
 }
