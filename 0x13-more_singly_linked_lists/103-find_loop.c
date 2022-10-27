@@ -6,12 +6,12 @@
  *
  * Return: pointer to the head of reversed list
  */
-listint_t *find_listint_loop(listint_t **head)
+listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *slow, *fast;
 
-	slow = *head;
-	fast = *head;
+	slow = head;
+	fast = head;
 
 	while (slow && fast && fast->next)
 	{
