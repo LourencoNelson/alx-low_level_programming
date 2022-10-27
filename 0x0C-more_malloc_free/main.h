@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <string.h>
+#include <stdlib.h>
 
 void *malloc_checked(unsigned int b);
 int _putchar(char c);
