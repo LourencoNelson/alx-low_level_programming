@@ -6,21 +6,19 @@
  *
  * Return: l, the last digit  of n
  */
-int print_last_digit(int n)
+int print_last_digit(long int n)
 {
 	int l;
 	long int num;
 
-	if (n == INT_MIN)
-		num = INT_MAX;
-	else if (n < 0)
+	if (n < 0)
 		num = n * (-1);
 	else
 		num = n;
 
 	l = num % 10;
 
-	_putchar(l + '0');
+	putchar(l + '0');
 
 	return (l);
 }
