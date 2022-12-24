@@ -17,7 +17,7 @@ int main(void)
 
 	while (i < 50)
 	{
-		printf("%d", fib);
+		printf("%d, ", fib);
 
 		a = b;
 		b = fib;
