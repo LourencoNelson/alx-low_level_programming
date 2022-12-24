@@ -9,19 +9,20 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int c = 0;
-	int fib = 0;
+	int a = 0;
+	int b = 1;
+	int i = 0;
 
-	while (fib < 50)
+	int fib = a + b;
+
+	while (i < 50)
 	{
-		fib = a + b;
-		c = b;
-		b = a;
-		a = c;
+		printf("%d", fib);
 
-		printf("%d, ", fib);
+		a = b;
+		b = fib;
+		fib = a + b;
+		i++;
 	}
 	return (0);
 }
