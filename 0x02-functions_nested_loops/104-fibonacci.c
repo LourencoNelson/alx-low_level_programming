@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-	long long int a = 0;
-	long long int b = 1;
+	unsigned long a = 0;
+	unsigned long b = 1;
 	int i = 0;
 
-	long long int fib = a + b;
+	unsigned long fib = a + b;
 
 	while (i < 98)
 	{
 		if (i < 97)
-			printf("%li, ", fib);
+			printf("%lu, ", fib);
 		else
-			printf("%li\n", fib);
+			printf("%lu\n", fib);
 
 		a = b;
 		b = fib;
