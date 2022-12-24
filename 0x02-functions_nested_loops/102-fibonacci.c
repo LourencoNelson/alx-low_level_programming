@@ -9,11 +9,11 @@
  */
 int main(void)
 {
-	int a = 0;
-	int b = 1;
+	long int a = 0;
+	long int b = 1;
 	int i = 0;
 
-	int fib = a + b;
+	long int fib = a + b;
 
 	while (i < 50)
 	{
