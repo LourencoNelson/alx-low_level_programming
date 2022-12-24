@@ -20,7 +20,7 @@ int main(void)
 		if (i < 49)
 			printf("%li, ", fib);
 		else
-			printf("%li\n");
+			printf("%li\n", fib);
 
 		a = b;
 		b = fib;
