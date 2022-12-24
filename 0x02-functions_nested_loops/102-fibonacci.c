@@ -17,7 +17,10 @@ int main(void)
 
 	while (i < 50)
 	{
-		printf("%li, ", fib);
+		if (i < 49)
+			printf("%li, ", fib);
+		else
+			printf("%li\n");
 
 		a = b;
 		b = fib;
