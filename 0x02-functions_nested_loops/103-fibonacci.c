@@ -15,7 +15,7 @@ int main(void)
 
 	long int fib = a + b;
 
-	while (fib <= 40000000)
+	while (fib <= 4000000)
 	{
 		if (fib % 2 == 0)
 			sum += fib;
