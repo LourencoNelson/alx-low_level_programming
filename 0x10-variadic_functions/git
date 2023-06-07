@@ -1,2 +1,0 @@
-#!/bin/bash
-git add ../0x10-variadic_functions; git commit -m "variadic functions tasks"; git push;
