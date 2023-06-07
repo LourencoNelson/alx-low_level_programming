@@ -8,20 +8,23 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 1;
-	int result = 1;
+	if (n < 0)
+		return (-);
+	return (actual_sqrt_recursion(n, 0));
+}
 
-	if (n == 0 || n == 1)
-		return (n);
-
-	while (result < n)
-	{
-		i++;
-		result =  i * i;
-	}
-
-	if (result == n)
-		return (i);
-	else
+/**
+ * actual_sqrt_recursion - recurses to find the natural
+ * @n: number
+ * @i: iterator
+ *
+ * Return: the resulting square root
+ */
+int actual_sqrt_recursion(int n, int i)
+{
+	if (i * i > n)
 		return (-1);
+	if (i * i == n)
+		return (i);
+	return (actual_sqrt_recursion(n, i + 1));
 }
