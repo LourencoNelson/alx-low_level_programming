@@ -1,2 +1,0 @@
-#!/bin/bash
-git add ../0x0E-structures_typedef; git commit -m "struct and typedef tasks"; git push;

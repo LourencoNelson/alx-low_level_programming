@@ -1,2 +1,0 @@
-#!/bin/bash
-git add ../0x0A-argc_argv; git commit -m "argc and argv[] tasks"; git push;

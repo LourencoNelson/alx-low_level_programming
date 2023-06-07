@@ -1,2 +1,0 @@
-#!/bin/bash
-git add ../0x0C-more_malloc_free; git commit -m "more malloc tasks"; git push;
