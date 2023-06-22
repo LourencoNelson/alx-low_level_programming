@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
 			default:
 				flag = -1;
 		}
-		if (j != (int) size -1 && flag == 0)
+		if (j != (int) size - 1 && flag == 0)
 			printf(", ");
 		if (flag == -1)
 			flag = 0;
