@@ -5,44 +5,44 @@
  */
 void print_all(const char * const format, ...)
 {
-	int size = strlen(format), j = 0, i, c, flag = 0;
-	double f;
-	char *s;
+	int i = 0;
+	char *str, *sep = "";
+
 	va_list ap;
 
 	va_start(ap, format);
-	while (j < size)
+
+	if (format)
 	{
-		switch (format[j])
+		while (format[i])
 		{
-			case 'c':
-				c = va_arg(ap, int);
-				printf("%c", c);
-				break;
-			case 'i':
-				i = va_arg(ap, int);
-				printf("%i", i);
-				break;
-			case 'f':
-				f = va_arg(ap, double);
-				printf("%f", f);
-				break;
-			case 's':
-				s = va_arg(ap, char*);
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
-				break;
-			default:
-				flag = -1;
+			switch (format[i])
+			{
+				case 'c':
+					printf("%s%c", sep, va_arg(args, int));
+					break;
+				case 'i':
+					printf("%s%c", sep, va_arg(args, int));
+					break;
+				case 'f':
+					printf("%s%f", sep, va_arg(args, double));
+					break;
+				case 's':
+					str = va_arg(args, *char);
+					if (str == NULL)
+						str = "(nil)";
+
+					printf("%s%s", sep, str);
+					break;
+				default:
+					i++;
+					continue;
+			}
+			sep = ", ";
+			i++;
 		}
-		if (j != (int) size - 1 && flag == 0)
-			printf(", ");
-		if (flag == -1)
-			flag = 0;
-		j++;
 	}
+
 	printf("\n");
-	va_end(ap);
+	va_end(args);
 }
