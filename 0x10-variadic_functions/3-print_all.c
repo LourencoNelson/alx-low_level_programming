@@ -8,9 +8,9 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *str, *sep = "";
 
-	va_list ap;
+	va_list args;
 
-	va_start(ap, format);
+	va_start(args, format);
 
 	if (format)
 	{
@@ -22,13 +22,13 @@ void print_all(const char * const format, ...)
 					printf("%s%c", sep, va_arg(args, int));
 					break;
 				case 'i':
-					printf("%s%c", sep, va_arg(args, int));
+					printf("%s%d", sep, va_arg(args, int));
 					break;
 				case 'f':
 					printf("%s%f", sep, va_arg(args, double));
 					break;
 				case 's':
-					str = va_arg(args, *char);
+					str = va_arg(args, char*);
 					if (str == NULL)
 						str = "(nil)";
 
