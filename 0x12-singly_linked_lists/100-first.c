@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void firt(void) __attibute__ ((constructor));
+void firt(void) __attribute__ ((constructor));
 
 /**
  * first - prints a sentence before the main is exec
