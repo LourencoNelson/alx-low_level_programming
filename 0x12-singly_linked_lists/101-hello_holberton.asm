@@ -1,16 +1,9 @@
-.global _start
-
-.text
-
-_start:
-	mov $1, %rax
-	mov $1, %rdi
-	mov $msg, %rsi
-	mov $13, %rdx
-	syscall
-
-	mov %60, %rax
-	mov %rdi, %rdi
-	syscall
-msg:
-	.ascii "Hello, World\n"
+	global	main
+	extern	printf
+main:
+	mov	edi, format
+	xor	eax, eax
+	call	printf
+	mov	eax, 0
+	ret
+format: db Hello, Holberton\n ,0
