@@ -1,23 +1,4 @@
 #include "main.h"
-
-/**
- * countSetBits - count set bits
- * @n: bits
- *
- * Return: set bits
- */
-unsigned int countSetBits(int n)
-{
-	int count = 0;
-
-	while (n > 0)
-	{
-		count++;
-		n &= (n - 1);
-	}
-	return (count);
-}
-
 /**
  * flip_bits - count of flipped number
  * @n: first argument
@@ -28,5 +9,15 @@ unsigned int countSetBits(int n)
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (countSetBits(n ^ m));
+	int i, count = 0;
+	unsigned long int current;
+	unsigned long int excl = n ^ m;
+
+	for (i = 63; i >= 0; i--)
+	{
+		current = excl >> i;
+		if (current & 1)
+			count++;
+	}
+	return (count);
 }
