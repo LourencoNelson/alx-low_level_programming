@@ -1,0 +1,2 @@
+#!/bin/bash
+git add ../0x14-bit_manipulation; git commit -m "bit manipulation tasks"; git push;
